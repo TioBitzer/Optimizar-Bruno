@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Task API",
+        "description": "Documentación de la API de tareas",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/optimizador": {
+            "get": {
+                "tags": [
+                    "Optimizador"
+                ],
+                "summary": "Retorna terminales, distritos y tarifas optimizadas",
+                "operationId": "761f9622d3cf47379f99044f08bc6b17",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Optimizador",
+            "description": "Optimizador"
+        }
+    ]
+}
