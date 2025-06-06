@@ -59,3 +59,58 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Requisitos
+- PHP >= 8.1
+- Composer
+- Laravel >= 10
+- MySQL
+
+## Instalación
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan db:seed (si tienes seeders)
+php artisan serve
+```
+
+## Documentación API (Swagger)
+```bash
+php artisan l5-swagger:generate
+```
+- Accede en: http://localhost:8000/api/documentation
+##Instalar dependencias
+
+bash
+Copiar
+Editar
+composer install
+Configurar variables de entorno
+
+bash
+Copiar
+Editar
+cp .env.example .env
+php artisan key:generate
+Edita .env con tus credenciales de base de datos.
+
+Ejecutar migraciones
+
+bash
+Copiar
+Editar
+php artisan migrate
+Levantar el servidor
+
+bash
+Copiar
+Editar
+php artisan serve
+🧪 Probar el endpoint
+Puedes acceder al endpoint desde:
+
+bash
+Copiar
+Editar
+GET /api/optimizador
